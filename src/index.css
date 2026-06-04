@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+:root {
+  --bg-gradient: radial-gradient(circle at 0% 0%, #ffdee9 0%, #b5fffc 100%);
+  --glass-bg: rgba(255, 255, 255, 0.45);
+  --glass-border: rgba(255, 255, 255, 0.3);
+  --text-primary: #1d1d1f;
+  --text-secondary: #48484a;
+  --accent: #007aff;
+  --accent-soft: rgba(0, 122, 255, 0.1);
+}
+
+body {
+  background: #e5e5e5;
+  background-image: var(--bg-gradient);
+  color: var(--text-primary);
+  margin: 0;
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  #root {
+    padding: 2rem;
+  }
+}
+
